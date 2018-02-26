@@ -1,0 +1,32 @@
+fieldset, label { margin: 0; padding: 0; }
+/****** Style Star Rating Widget *****/
+.review_rating {border: none; float:left;}
+
+.review_rating > input { display: none; width:auto; } 
+.review_rating > label:before { margin: 5px; font-size: 1.25em; font-family: FontAwesome; display: inline-block; content: "\f005";}
+.review_rating > .half:before {content: "\f089"; position: absolute;}
+.review_rating > label {color: #ddd; float: right; width:auto !important;}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.review_rating > input:checked ~ label, /* show gold star when clicked */
+.review_rating:not(:checked) > label:hover, /* hover current star */
+.review_rating:not(:checked) > label:hover ~ label { color: #ffd203;  } /* hover previous stars in list */
+
+.review_rating > input:checked + label:hover, /* hover current star when changing rating */
+.review_rating > input:checked ~ label:hover,
+.review_rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.review_rating > input:checked ~ label:hover ~ label { color: #ffd203;  } 
+
+.review_rating { float:none !important; display:inline-block}
+.review_rating > label { font-size:18px !important;}
+
+.star_more_txt { float:right; width:auto; margin:5px 0 0 10px; font-size:12px;}
+
+@media (max-width: 767px) {
+	.review_rating { display:inline-block}
+}
+
+@media (min-width: 768px) {
+	.review_rating { float:left;}
+}

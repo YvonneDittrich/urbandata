@@ -1,0 +1,20 @@
+fieldset, label { margin: 0; padding: 0; }
+/****** Style Star Rating Widget *****/
+.rating_static {border: none;}
+
+.rating_static > input { display: none; } 
+.rating_static > label:before { margin: 5px; font-size: 1.25em; font-family: FontAwesome; display: inline-block; content: "\f005";}
+.rating_static > .half:before {content: "\f089"; position: absolute;}
+.rating_static > label {color: #ddd; float: right;}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating_static > input:checked ~ label { color: #ffd203;  } /* hover previous stars in list */
+
+@media (max-width: 767px) {
+	.rating_static { display:inline-block}
+}
+
+@media (min-width: 768px) {
+	.rating_static { float:left;}
+}
