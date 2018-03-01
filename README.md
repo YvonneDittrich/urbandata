@@ -4,7 +4,9 @@ Frontend: Angular JS, HTML5, CSS3, Bootstrap 3 etc.
 
 Backend: PHP, Mysql
 
-## Main Config File - scripts/config.php
+## Main Config File
+
+scripts/config.php
 
 ## About Angular JS
 
@@ -22,4 +24,6 @@ AngularJS implements the MVC pattern to separate presentation, data, and logic c
 
 Angular JS has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Angular JS documentation](https://docs.angularjs.org) is thorough, complete, and makes it a breeze to get started learning the framework.
 
-## Developed by - Ajay Kumar (https://www.upwork.com/freelancers/~01730ad5b1719f1b0d)
+## Developed by
+
+Ajay Kumar (https://www.upwork.com/freelancers/~01730ad5b1719f1b0d)
